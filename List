@@ -1,0 +1,12 @@
+
+# Assuming you have a list of values
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+# Convert the list to a string with comma-separated values
+values = ', '.join(str(value) for value in my_list)
+
+# Build the SQL query with the WHERE condition
+sql_query = f"SELECT * FROM your_table WHERE your_column IN ({values})"
+
+# Execute the SQL query using your database connection
+# ... (code to execute the query and fetch results)
